@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form id="week">
+    <input type="radio" id="monday" name="day" value="monday">
+    <label for="monday">Monday</label><br>
+    <input type="radio" id="tuesday" name="day" value="tuesday">
+    <label for="tuesday">Tuesday</label><br>
+    <input type="radio" id="wednesday" name="day" value="wednesday">
+    <label for="wednesday">Wednesday</label><br>
+    <input type="radio" id="thursday" name="day" value="thursday">
+    <label for="thursday">Thursday</label><br>
+    <input type="radio" id="friday" name="day" value="friday">
+    <label for="friday">Friday</label><br>
+    <input type="radio" id="saturday" name="day" value="saturday">
+    <label for="saturday">Saturday</label><br>
+    <input type="radio" id="sunday" name="day" value="sunday">
+    <label for="sunday">Sunday</label><br>
+</form>
+<script>
+    switch (new Date().getDay()) {
+        case 0:
+            day = "Monday";
+            break;
+        case 1:
+            day = "Tuesday";
+            break;
+        case 2:
+            day = "Wednesday";
+            break;
+        case 3:
+            day = "Thursday";
+            break;
+        case 4:
+            day = "Friday";
+            break;
+        case 5:
+            day = "Saturday";
+            break;
+        case 6:
+            day = "Sunday";
+            break;
+    }
+    function weeks (document.getElementById("week")) {
+      if ("week" =  0) {
+          print ('School: 2-4, Work: 4-8');
+      }
+      if ("week" =  1) {
+            print ('School: 12:30-3:30');
+      }
+      if ("week" =  2) {
+            print ('School: 2-4, Work: 4:30-8');
+        }
+      if ("week" =  3) {
+            print ('School: 12:30-3:30, );
+        }
+      if ("week" =  4) {
+            print ('Work: 10-7:30');
+        }
+      if ("week" =  5) {
+            print ('Work: 10-8:30');
+        }
+      if ("week" =  6) {
+            print ('Church: 10-11:30');
+        }
+    }
+</script>
+</body>
+</html>
